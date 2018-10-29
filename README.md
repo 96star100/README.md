@@ -1,34 +1,34 @@
 # git 명령어
-전역 설정 정보 조회
+●전역 설정 정보 조회
 git config - -global - -list
 
-전역 설정 정보 삭제시키기
+●전역 설정 정보 삭제시키기
 git config --global --unset-all user.email
 
 git config --global --unset-all user.name
 
-새로운 저장소 초기화하기
+●새로운 저장소 초기화하기
 git init
 
-저장소 복제하기
+●저장소 복제하기
 git clone <저장소 url>
 
-새로운 원격 저장소 추가하기
+●새로운 원격 저장소 추가하기
 git remote add <원격 저장소> <저장소 url>
 
-새로운 파일 git에 등록시키기(staging)
+●새로운 파일 git에 등록시키기(staging)
 git add <파일>
 
-현재까지 작업한 내용 저장하기
+●현재까지 작업한 내용 저장하기
 git commit -m “<메시지>”
 
-원격 저장소에서 합치지 않고 지역 브랜치로 변경 사항 가져오기
+●원격 저장소에서 합치지 않고 지역 브랜치로 변경 사항 가져오기
 git fetch <원격 저장소>
 
-원격 저장소에서 변경 사항을 가져와 현재 브랜치에 합치기
+●원격 저장소에서 변경 사항을 가져와 현재 브랜치에 합치기
 git pull <원격 저장소>
 
-새로운 로컬 브랜치를 원격 저장소에 푸싱하기
+●새로운 로컬 브랜치를 원격 저장소에 푸싱하기
 git push <원격 저장소> <지역 브랜치>
 
 # 마크다운 사용법(문법)
@@ -142,45 +142,3 @@ end code block.
 2.5. 수평선<hr/>
 아래 줄은 모두 수평선을 만든다. 마크다운 문서를 미리보기로 출력할 때 페이지 나누기 용도로 많이 사용한다.
 
-* * *
-
-***
-
-*****
-
-- - -
-
----------------------------------------
-2.6. 링크
-참조링크
-[link keyword][id]
-[id]: URL "Optional Title here"
-
-Link: [Google][googlelink]
-[googlelink]: https://google.com "Go google"
-Link: [Google][googlelink] [googlelink]: https://google.com "Go google"
-
-인라인 링크
-syntax: [Title](link)
-Link: Google
-
-자동연결
-<http://example.com/>
-<address@example.com>
-http://example.com/ address@example.com
-
-2.7. 강조
-*single asterisks*
-_single underscores_
-**double asterisks**
-__double underscores__
-++underline++
-~~cancelline~~
-single asterisks single underscores double asterisks double underscores ++underline++ cancelline
-
-2.8. 이미지
-![Alt text](/path/to/img.jpg)
-![Alt text](/path/to/img.jpg "Optional title")
-석촌호수 러버덕 석촌호수 러버덕
-
-사이즈 조절 기능은 없기 때문에 <img width="" height=""></img>를 이용한다.
