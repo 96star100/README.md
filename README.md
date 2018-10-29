@@ -1,4 +1,4 @@
-git 명령어
+# git 명령어
 전역 설정 정보 조회
 git config - -global - -list
 
